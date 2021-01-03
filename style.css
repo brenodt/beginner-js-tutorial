@@ -28,6 +28,9 @@ form input, form button {
     border: none;
     background: white;
 }
+input:focus, button:focus {
+    border: 0 none !important;
+}
 
 form button {
     color: #fda085;
@@ -76,4 +79,7 @@ form button:hover {
 
 .complete-btn {
     background: #86bd86;
+}
+.todo-item {
+    padding: 0rem 0.5rem;
 }

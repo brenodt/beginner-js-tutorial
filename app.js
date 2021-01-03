@@ -11,7 +11,7 @@ function addTodo(event) {
     const todoDiv = document.createElement('div');
     todoDiv.classList.add("todo");
     const newTodo = document.createElement('li');
-    newTodo.innerText
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
     const completedButton = document.createElement('button');
@@ -23,4 +23,5 @@ function addTodo(event) {
     trashButton.classList.add('delete-btn');
     todoDiv.appendChild(trashButton);
     todoList.appendChild(todoDiv);
+    todoInput.value = "";
 }
