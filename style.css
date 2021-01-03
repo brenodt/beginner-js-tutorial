@@ -70,6 +70,11 @@ form button:hover {
     opacity: 0.5;
 }
 
+.todo.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
 .todo li {
     flex: 1;
 }

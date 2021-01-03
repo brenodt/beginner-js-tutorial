@@ -31,7 +31,9 @@ function addTodo(event) {
 function checkDelete(event) {
     const item = event.target;
     if (item.classList[0] !== 'delete-btn') return;
-    item.parentElement.remove();
+    const todo = item.parentElement;
+    todo.classList.add('fall');
+    todo.addEventListener('transitionend', () => todo.remove());
 }
 
 function checkMarkAsDone(event) {
